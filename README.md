@@ -10,4 +10,4 @@
 * Create virtual environment using command `python -m venv venv`
 * Activate virtual environment using command `.\venv\Scripts\Activate.ps1` for `Windows` and `source venv/bin/activate` for `Mac/Linux`
 * Command `mkdocs serve` will host the documentation on local host
-* After completion of changes and testing. Deactivate virtual environment created using command `deactivate venv`
+* After completion of changes and testing. Deactivate virtual environment using command `deactivate venv`
