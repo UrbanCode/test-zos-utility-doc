@@ -4,9 +4,9 @@
 
 Allocate a non-SMS-managed data set. 
 
-!!! note 
-    To create a GDG version add (+1) along with GDG base. An output property **DatasetName** will contain the actual GDG version dataset name that is created and can be referred in successive steps of the process.
-
+!!! Note 
+    To create a GDG version add (+1) along with GDG base. 
+    An output property `DatasetName` will contain the actual GDG version dataset name that is created and can be referred in successive steps of the process.
 
 | Name                     | Type                                                       | Description                                                                                                                                                                                                                                   | Required |
 |--------------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -116,14 +116,13 @@ Load artifacts from a remote repository using FTP.
 
 ## Generate Artifact Information
 
-**Note:**
+> **Note:**
+> ---------
+>* Deployment Action filter is applicable only if **Backup** is enabled in [Deploy Data Sets](/steps.md#deploy-data-sets) step
+>* Deployment Action filter is applicable only for loop types **Sequential Datasets** or **PDS Members**
+>* Target Dataset Name filter is applicable for only **Dataset/PDS Member** loop types
 
-* Deployment Action filter is applicable only if **Backup** is enabled in [Deploy Data Sets](../zos-deploy/steps.md#deploy-data-sets) step
-* Deployment Action filter is applicable only for loop types **Sequential Datasets** or **PDS Members**
-* Target Dataset Name filter is applicable for only **Dataset/PDS Member** loop types
-* From version 51, groovy string methods are not interpreted in Template input since the code is rewritten in Java.
-
-Generate text information for selected version artifacts. The information is sent to the text output property for use by later steps. Check out our new plugin <https://urbancode.github.io/IBM-UCx-PLUGIN-DOCS/UCD/zos-multi-generate-artifact-info/> to generate multiple templates using a single step
+Generate text information for selected version artifacts. The information is sent to the text output property for use by later steps. **Note:** From version 51, groovy string methods are not interpreted in Template input since the code is rewritten in Java. Use our new plugin <https://urbancode.github.io/IBM-UCx-PLUGIN-DOCS/UCD/zos-multi-generate-artifact-info/> to generate multiple templates using a single step
 
 | Name                         | Type                                                                                                                                                                                                                                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Required |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|

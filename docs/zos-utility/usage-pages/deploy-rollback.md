@@ -2,7 +2,7 @@
 
 ---
 
-This page covers below sections
+## This page covers below sections
 
 * [Deploy a component version to z/OS platform](deploy-rollback.md#deploy-a-component-version-to-zos-platform)
   * [Component process setup for deploying component version](deploy-rollback.md#component-process-setup-for-deploying-component-version)
@@ -33,7 +33,7 @@ Post-processing steps can be added as per the requirement after [Deploy Data set
 * [Replace Token MVS](../steps.md#replace-tokens-mvs) step to replace tokens in dataset/member
 * [CICS New Copy](../../CICS/steps.md#new-copy-resources) step and so on.
 
-If external repository (Artifactory or Nexus) is used to store zOS Component version, Use [Download Artifacts for zOS External Repo](../../zOS-external-artifact-download/steps.md#download-artifacts) step to download version artifacts from the external repository.
+If external repository (Artifactory or Nexus) is used to store zOS Component version, Use [Download Artifacts for zOS External Repo](../../zos-external-artifact-download/steps.md#download-artifacts) step to download version artifacts from the external repository.
 Component process design will be as below.
 
 [![deploy-zos2](../media/deploy-zos2.png)](../media/deploy-zos2.png)
@@ -83,3 +83,7 @@ __Component Inventory Update__ step must be the last step in the application pro
 Application process design will be as below.
 
 [![rollback-zos2](../media/rollback-zos2.png)](../media/rollback-zos2.png)
+
+| Back to ...          |
+|----------------------|
+| [Usage](../usage.md) |
