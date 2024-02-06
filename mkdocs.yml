@@ -1,15 +1,13 @@
-site_name: IBM DevOps Deploy Plugins
+site_name: z/OS Utility plugin
 
 theme:
   name: material
   language: en
   font: false
-  favicon: assets/images/deploy.png
-  logo: assets/images/deploy.png
   features: 
     - navigation.top
     - navigation.tabs
-    - navigation.sections
+    - navigation.tabs.sticky
     - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -17,7 +15,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      primary: blue
+      primary: white
       accent: blue
 
     - media: "(prefers-color-scheme: dark)"
@@ -25,7 +23,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-      primary: indigo
+      primary: black
       accent: blue
 markdown_extensions:
   - admonition

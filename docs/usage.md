@@ -1,5 +1,27 @@
 # Usage
 
+The following pages provide usage information about this plug-in:
+
+* [Deployment and Rollback for z/OS component version](deployment-rollback-design/deploy-rollback.md#deployment-and-rollback-for-zos-component-version)
+  * [Deploy a component version to z/OS platform](deployment-rollback-design/deploy-rollback.md#deploy-a-component-version-to-zos-platform)
+    * [Component process setup for deploying component version](deployment-rollback-design/deploy-rollback.md#component-process-setup-for-deploying-component-version)
+    * [Application process setup for deploying component version](deployment-rollback-design/deploy-rollback.md#application-process-setup-for-deploying-component-version)
+  * [Rollback a component version from z/OS platform](deployment-rollback-design/deploy-rollback.md#rollback-a-component-version-from-zos-platform)
+    * [Component process setup for rolling back a component version](deployment-rollback-design/deploy-rollback.md#component-process-setup-for-rolling-back-a-component-version)
+    * [Application process setup for rolling back a component version](deployment-rollback-design/deploy-rollback.md#application-process-setup-for-rolling-back-a-component-version)
+* [Rollback for z/OS component version with application template](deployment-rollback-design/rollback-with-template.md#rollback-for-zos-component-version-with-application-template)
+* [Deploying by using the Job Monitor](#deploying-by-using-the-job-monitor)
+* [Submitting a JCL job and then checking for status](#submitting-a-jcl-job-and-then-checking-for-status)
+* [Submitting a JCL job from a template](#submitting-jcl-jobs-from-a-template)
+* [MVS component template](#mvs-component-template)
+* [Managing redundant versions](#managing-redundant-versions)
+  * [Remove Redundant Versions](#remove-redundant-versions)
+  * [Ignoring High Level Qualifiers](#ignoring-high-level-qualifiers)
+* [Running MVS system commands](#running-mvs-system-commands)
+* [Using custom properties in deployments](#using-custom-properties-in-deployments)
+* [Deploying data sets and running CICS commands](#deploying-data-sets-and-running-cics-commands)
+* [Deploying HFS files](#deploying-hfs-files)
+
 ## Running MVS system commands
 
 The Run MVS Command step uses the Java programming interface with the System Display and Search Facility (SDSF) to run MVS system commands on the agent. To use the Run MVS Command step, you must work with your system administrator to configure security properly for the agent user account. In the following examples, protecting resources by setting the universal access authority (UACC) to NONE might prevent all users, except users with explicit permission, from accessing the protected command.
