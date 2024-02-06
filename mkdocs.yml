@@ -15,7 +15,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      primary: white
+      primary: blue
       accent: blue
 
     - media: "(prefers-color-scheme: dark)"
@@ -23,7 +23,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-      primary: black
+      primary: indigo
       accent: blue
 markdown_extensions:
   - admonition
