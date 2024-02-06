@@ -27,3 +27,5 @@ theme:
       accent: blue
 markdown_extensions:
   - admonition
+extra:
+  generator: false
